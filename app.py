@@ -493,6 +493,130 @@ div[data-testid="stRadio"] * {
     color: white !important;
     opacity: 1 !important;
 }
+            @media (max-width: 768px) {
+    .stats-bar, .features-strip, .mode-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    
+    .stats-bar .stat-item:last-child {
+        grid-column: span 2;
+    }
+    
+    .hero-wrap {
+        padding: 32px 16px 24px !important;
+    }
+    
+    .hero-title {
+        font-size: 32px !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px !important;
+        padding: 0 12px !important;
+    }
+    
+    .mode-card {
+        padding: 20px 16px !important;
+    }
+    
+    .mode-icon {
+        font-size: 28px !important;
+    }
+    
+    .mode-title {
+        font-size: 14px !important;
+    }
+    
+    .mode-desc {
+        font-size: 11px !important;
+    }
+    
+    .name-wrap, .marks-wrap {
+        padding: 20px 16px !important;
+    }
+    
+    .q-card {
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 14px !important;
+    }
+    
+    .q-num {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 10px !important;
+    }
+    
+    .q-text {
+        font-size: 14px !important;
+    }
+    
+    div[data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap !important;
+    }
+    
+    div[data-testid="stHorizontalBlock"] div[data-testid="stColumn"] {
+        flex: 1 0 auto !important;
+        min-width: 80px !important;
+    }
+    
+    div[data-testid="stHorizontalBlock"] div[data-testid="stColumn"] button {
+        font-size: 11px !important;
+        padding: 6px 8px !important;
+        white-space: normal !important;
+    }
+    
+    .progress-wrap {
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+    }
+    
+    .section-sep {
+        margin: 28px 0 20px !important;
+    }
+    
+    .features-strip {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .stats-bar {
+        flex-direction: column !important;
+    }
+    
+    .stat-item {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255,255,255,0.20) !important;
+        padding: 16px !important;
+    }
+    
+    .stat-item:last-child {
+        border-bottom: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-bar, .features-strip, .mode-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .stats-bar .stat-item {
+        grid-column: span 1 !important;
+    }
+    
+    .mode-card {
+        padding: 16px 12px !important;
+    }
+    
+    div[data-testid="stRadio"] > div {
+        flex-wrap: wrap !important;
+    }
+    
+    div[data-testid="stRadio"] label {
+        font-size: 10px !important;
+        padding: 5px 8px !important;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -1535,18 +1659,25 @@ if st.session_state.mode in ("interest", "both"):
         <div class="q-text">{q}</div>
     </div>
     """, unsafe_allow_html=True)
-        val = st.radio(
-            label=f"q{i}",
-            options=options,
-            index=options.index(st.session_state[f"q_{i}"]) if st.session_state[f"q_{i}"] in options else None,
-            horizontal=True,
-            key=f"radio_{i}",
-            label_visibility="collapsed",
-        )
-        st.session_state[f"q_{i}"] = val
-        answers.append(val)
-        if val:
-            scores[question_categories[i]] += score_map[val]
+        # Get current value from session state
+    current_val = st.session_state.get(f"q_{i}")
+    try:
+        default_index = options.index(current_val) if current_val in options else None
+    except ValueError:
+        default_index = None
+
+    val = st.radio(
+        label=f"q{i}",
+        options=options,
+        index=default_index,
+        horizontal=True,
+        key=f"radio_{i}",
+        label_visibility="collapsed",
+    )
+    st.session_state[f"q_{i}"] = val
+    answers.append(val)
+    if val:
+        scores[question_categories[i]] += score_map[val]
 
 # ── SUBFIELD QUESTIONS DATA ──────────────────────────────────────────────────
 # ~4 questions per subfield, indirect, grade 8/9 appropriate
@@ -4985,33 +5116,41 @@ _tip.className = "career-tooltip";
 _tip.innerHTML = '<div class="career-tooltip-title" id="_tipTitle"></div><ul class="career-tooltip-list" id="_tipList"></ul>';
 document.body.appendChild(_tip);
 
-document.addEventListener("mouseover", function(e) {{
-  const pill = e.target.closest("[data-subfield]");
-  if (!pill) return;
-  const sf = pill.getAttribute("data-subfield");
-  const paths = allCareerPaths[sf] || [];
-  if (!paths.length) return;
-  document.getElementById("_tipTitle").textContent = sf;
-  const list = document.getElementById("_tipList");
-  list.innerHTML = paths.map(function(p) {{ return "<li>" + p + "</li>"; }}).join("");
-  _tip.classList.add("visible");
-}});
+// Extend tooltip to all pills including those dynamically added
+function attachTooltipToPills() {{
+  document.querySelectorAll('.pill, [data-subfield]').forEach(pill => {{
+    if (pill.hasAttribute('data-tooltip-attached')) return;
+    pill.setAttribute('data-tooltip-attached', 'true');
+    pill.addEventListener('mouseenter', function(e) {{
+      const sf = this.getAttribute('data-subfield');
+      if (!sf) return;
+      const paths = allCareerPaths[sf] || [];
+      if (!paths.length) return;
+      document.getElementById("_tipTitle").textContent = sf;
+      const list = document.getElementById("_tipList");
+      list.innerHTML = paths.map(function(p) {{ return "<li>" + p + "</li>"; }}).join("");
+      _tip.classList.add("visible");
+    }});
+    pill.addEventListener('mouseleave', function() {{
+      _tip.classList.remove("visible");
+    }});
+    pill.addEventListener('mousemove', function(e) {{
+      if (!_tip.classList.contains("visible")) return;
+      const x = e.clientX, y = e.clientY;
+      const tw = _tip.offsetWidth, th = _tip.offsetHeight;
+      const left = (x + tw + 16 > window.innerWidth) ? x - tw - 12 : x + 12;
+      const top  = (y + th + 16 > window.innerHeight) ? y - th - 12 : y + 12;
+      _tip.style.left = left + "px";
+      _tip.style.top  = top  + "px";
+    }});
+  }});
+}}
 
-document.addEventListener("mousemove", function(e) {{
-  if (!_tip.classList.contains("visible")) return;
-  const x = e.clientX, y = e.clientY;
-  const tw = _tip.offsetWidth, th = _tip.offsetHeight;
-  const left = (x + tw + 16 > window.innerWidth) ? x - tw - 12 : x + 12;
-  const top  = (y + th + 16 > window.innerHeight) ? y - th - 12 : y + 12;
-  _tip.style.left = left + "px";
-  _tip.style.top  = top  + "px";
-}});
-
-document.addEventListener("mouseout", function(e) {{
-  const pill = e.target.closest("[data-subfield]");
-  if (!pill) return;
-  _tip.classList.remove("visible");
-}});
+// Call on load and after any dynamic content
+document.addEventListener("DOMContentLoaded", attachTooltipToPills);
+// Observe for dynamically added content
+const observer = new MutationObserver(attachTooltipToPills);
+observer.observe(document.body, {{ childList: true, subtree: true }});
 // ────────────────────────────────────────────────────────────────────────────
 
 </script>
