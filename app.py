@@ -499,7 +499,7 @@ div[data-testid="stRadio"] * {
 # ── LANGUAGE (placed first so hero can use it) ──
 col_l, col_r = st.columns([4, 1])
 with col_r:
-    language = st.selectbox("", ["English", "Zulu", "Swahili"], label_visibility="collapsed")
+    language = st.selectbox("Select Language", ["English", "Zulu", "Swahili"], label_visibility="collapsed")
 
 # ── HERO TRANSLATIONS ──
 _hero = {
