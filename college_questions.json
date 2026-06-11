@@ -1,0 +1,1040 @@
+{
+  "version": "1.0",
+  "user_type": "college",
+  "total_categories": 16,
+  "total_questions": 1600,
+  "response_options": {
+    "5": "Strongly Agree",
+    "4": "Agree",
+    "3": "Neutral",
+    "2": "Disagree",
+    "1": "Strongly Disagree"
+  },
+  "scoring": {
+    "min_score_per_category": 0,
+    "max_score_per_category": 500,
+    "match_thresholds": {
+      "high": 70,
+      "moderate": 50,
+      "low": 30
+    }
+  },
+  "categories": [
+    {
+      "category_id": "tech_engineering_college",
+      "category_name": "Technology & Engineering",
+      "icon": "💻",
+      "color": "#3B82F6",
+      "total_questions": 50,
+      "parent_questions": [
+        {
+          "id": "tech_c_p1",
+          "text": "I have experience with at least one programming language like Python, Java, or C++.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_c_p2",
+          "text": "I understand the basics of data structures and algorithms.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_c_p3",
+          "text": "I have built a software project or application outside of class assignments.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_c_p4",
+          "text": "I am comfortable using version control systems like Git and GitHub.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_c_p5",
+          "text": "I understand how the internet works including HTTP, DNS, servers, and clients.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "tech_c_s1",
+          "text": "I have built a machine learning model using TensorFlow or PyTorch.",
+          "subfield": "Artificial Intelligence & Machine Learning",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "tech_c_s2",
+          "text": "I understand supervised and unsupervised learning concepts.",
+          "subfield": "Artificial Intelligence & Machine Learning",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "tech_c_s3",
+          "text": "I have worked with datasets and performed data preprocessing.",
+          "subfield": "Data Science & Analytics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "tech_c_s4",
+          "text": "I can write complex SQL queries to extract and analyze data.",
+          "subfield": "Data Science & Analytics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "tech_c_s5",
+          "text": "I understand common vulnerabilities like SQL injection and XSS.",
+          "subfield": "Cybersecurity",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "health_sciences_college",
+      "category_name": "Health & Life Sciences",
+      "icon": "🏥",
+      "color": "#22C55E",
+      "total_questions": 30,
+      "parent_questions": [
+        {
+          "id": "health_c_p1",
+          "text": "I have taken or plan to take pre-med or health science courses.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_c_p2",
+          "text": "I understand human anatomy and physiology at a basic level.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_c_p3",
+          "text": "I have volunteered in a hospital, clinic, or healthcare setting.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_c_p4",
+          "text": "I am familiar with medical terminology.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_c_p5",
+          "text": "I have taken chemistry, biology, and biochemistry courses.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "health_c_s1",
+          "text": "I have shadowed a doctor or observed clinical settings.",
+          "subfield": "Medical (Doctor)",
+          "type": "subfield",
+          "weight": 1.3
+        },
+        {
+          "id": "health_c_s2",
+          "text": "I am preparing to apply to medical school.",
+          "subfield": "Medical (Doctor)",
+          "type": "subfield",
+          "weight": 1.3
+        },
+        {
+          "id": "health_c_s3",
+          "text": "I am pursuing a degree in nursing or allied health.",
+          "subfield": "Healthcare (Non-Doctor)",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "health_c_s4",
+          "text": "I have clinical rotation or practicum experience.",
+          "subfield": "Healthcare (Non-Doctor)",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "health_c_s5",
+          "text": "I have taken courses in kinesiology, biomechanics, or exercise physiology.",
+          "subfield": "Physiotherapy",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "business_finance_college",
+      "category_name": "Business, Finance & Management",
+      "icon": "💼",
+      "color": "#F59E0B",
+      "total_questions": 35,
+      "parent_questions": [
+        {
+          "id": "bus_c_p1",
+          "text": "I have taken or plan to take business, economics, or finance courses.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "bus_c_p2",
+          "text": "I understand basic accounting principles like debits and credits.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "bus_c_p3",
+          "text": "I have experience with Excel or Google Sheets for financial analysis.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "bus_c_p4",
+          "text": "I understand marketing concepts like the 4 Ps and segmentation.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "bus_c_p5",
+          "text": "I have worked on a team project where I managed others.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "bus_c_s1",
+          "text": "I have taken courses in strategic management and operations.",
+          "subfield": "Business & Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "bus_c_s2",
+          "text": "I have launched or attempted to launch a business or side hustle.",
+          "subfield": "Entrepreneurship & Startups",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "bus_c_s3",
+          "text": "I have built financial models like DCF and three-statement models.",
+          "subfield": "Finance & Accounting",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "bus_c_s4",
+          "text": "I have taken courses in marketing and consumer behavior.",
+          "subfield": "Marketing & Advertising",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "bus_c_s5",
+          "text": "I have taken courses in supply chain and logistics management.",
+          "subfield": "Supply Chain & Logistics",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "creative_arts_college",
+      "category_name": "Creative Arts, Design & Media",
+      "icon": "🎨",
+      "color": "#6366F1",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "art_c_p1",
+          "text": "I have a portfolio of my creative work in art or design.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "art_c_p2",
+          "text": "I am proficient in Adobe Creative Suite like Photoshop or Illustrator.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "art_c_p3",
+          "text": "I have completed projects for clients, contests, or publications.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "art_c_p4",
+          "text": "I have collaborated on creative projects like films or games.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "art_c_p5",
+          "text": "I have taken courses in creative entrepreneurship.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "art_c_s1",
+          "text": "I have created a cohesive body of artwork or design projects.",
+          "subfield": "Arts & Media",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "art_c_s2",
+          "text": "I have performed on stage in acting, dance, or music.",
+          "subfield": "Performing Arts",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "art_c_s3",
+          "text": "I have created short films, videos, or digital content.",
+          "subfield": "Film, TV & Digital Content",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "art_c_s4",
+          "text": "I have taken courses in UX design or user research.",
+          "subfield": "UX & Product Design",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "art_c_s5",
+          "text": "I love playing video games and think about how they are made.",
+          "subfield": "Game Design & Development",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "society_law_college",
+      "category_name": "Society, Law & Governance",
+      "icon": "⚖️",
+      "color": "#8B5CF6",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "law_c_p1",
+          "text": "I have taken courses in political science, law, or international relations.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "law_c_p2",
+          "text": "I understand how government systems work at multiple levels.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "law_c_p3",
+          "text": "I have participated in debates, Model UN, or moot court.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "law_c_p4",
+          "text": "I have completed internships at law firms, courts, or legal organizations.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "law_c_p5",
+          "text": "I am interested in corporate law, mergers, and contract negotiations.",
+          "type": "parent",
+          "weight": 1.0
+        }
+
+      ],
+      "subfield_questions": [
+        {
+          "id": "law_c_s1",
+          "text": "I have taken courses in constitutional and criminal law.",
+          "subfield": "Law & Politics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "law_c_s2",
+          "text": "I have taken courses in international relations and foreign policy.",
+          "subfield": "International Relations",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "law_c_s3",
+          "text": "I have taken courses in criminology or criminal justice.",
+          "subfield": "Criminal Justice & Forensics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "law_c_s4",
+          "text": "I am interested in criminal justice, forensics, and evidence law.",
+          "subfield": "Criminal Justice & Forensics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "law_c_s5",
+          "text": "I am passionate about upholding justice and advocating for the rule of law.",
+          "subfield": "Criminal Justice & Forensics",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "environment_college",
+      "category_name": "Environment, Agriculture & Earth Sciences",
+      "icon": "🌍",
+      "color": "#10B981",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "env_c_p1",
+          "text": "I have taken courses in environmental science, ecology, or geology.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_c_p2",
+          "text": "I have conducted field research or lab experiments in environmental science.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_c_p3",
+          "text": "I understand climate science, carbon cycles, and sustainability concepts.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_c_p4",
+          "text":"I have completed internships with environmental NGOs, government agencies, or research labs.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_c_p5",
+          "text": "I am passionate about protecting the planet and promoting sustainable living.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "env_c_s1",
+          "text": "I have taken courses in ecology, conservation biology, or ecosystem management.",
+          "subfield": "Environmental Science",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "env_c_s2",
+          "text": "I love the ocean and have taken marine biology courses.",
+          "subfield": "Marine Science & Oceanography",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "env_c_s3",
+          "text": "I have taken courses in geology, geophysics, or hydrology.",
+          "subfield": "Geology & Earth Sciences",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "env_c_s4",
+          "text": "I understand GIS and remote sensing for environmental mapping.",
+          "subfield": "Geology & Earth Sciences",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "env_c_s5",
+          "text": "I understand waste management, recycling, and circular economy principles.",
+          "subfield": "Geology & Earth Sciences",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "services_college",
+      "category_name": "Services, Hospitality & Public Safety",
+      "icon": "🛡️",
+      "color": "#EF4444",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "serv_c_p1",
+          "text": "I have taken courses in hospitality management or public safety.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "serv_c_p2",
+          "text": "I have worked in customer service, food service, or hotel operations.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "serv_c_p3",
+          "text": "I have experience planning or coordinating events.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "serv_c_p4",
+          "text": "I have taken courses in hospitality marketing, branding, and revenue management.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "serv_c_p5",
+          "text": "I am interested in luxury hospitality, boutique hotels, and premium experiences.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "serv_c_s1",
+          "text": "I have taken courses in hotel management, tourism, or culinary arts.",
+          "subfield": "Hospitality & Tourism",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "serv_c_s2",
+          "text": "I have completed physical fitness tests and basic training.",
+          "subfield": "Defence & Public Safety",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "serv_c_s3",
+          "text": "I am passionate about creating memorable experiences for guests.",
+          "subfield": "Event Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "serv_c_s4",
+          "text": "I have planned or coordinated events for 50+ attendees.",
+          "subfield": "Event Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "serv_c_s5",
+          "text": "I am interested in food and beverage management, menu planning, and cost control.",
+          "subfield": "Event Management",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "education_college",
+      "category_name": "Education & Training",
+      "icon": "📚",
+      "color": "#F97316",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "edu_c_p1",
+          "text": "I have tutored, taught, or trained others in academic or professional settings.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_c_p2",
+          "text": "I have taken courses in education, pedagogy, or curriculum development.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_c_p3",
+          "text": "I have created lesson plans, training materials, or educational content.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_c_p4",
+          "text": "I am interested in educational psychology, child development, or learning theories.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_c_p5",
+          "text": "I have taken courses in educational technology, e-learning, or instructional design.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "edu_c_s1",
+          "text": "I have completed student teaching or classroom observation hours.",
+          "subfield": "School Education",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "edu_c_s2",
+          "text": "I have served as a teaching assistant or graduate assistant.",
+          "subfield": "Higher Education & Academia",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "edu_c_s3",
+          "text": "I have worked with students who have learning disabilities or autism.",
+          "subfield": "Special Education",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "mathematics_college",
+      "category_name": "Mathematics & Statistics",
+      "icon": "📐",
+      "color": "#06B6D4",
+      "total_questions": 30,
+      "parent_questions": [
+        {
+          "id": "math_c_p1",
+          "text": "I have taken advanced mathematics courses like calculus and linear algebra.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_c_p2",
+          "text": "I have taken statistics or probability courses.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_c_p3",
+          "text": "I am proficient with statistical software like R, SAS, or Python.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_c_p4",
+          "text": "I understand complex numbers, vector spaces, and matrix algebra.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_c_p5",
+          "text":  "I have taken courses in mathematical logic or set theory.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "math_c_s1",
+          "text": "I have taken courses in abstract algebra, real analysis, or topology.",
+          "subfield": "Pure Mathematics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "math_c_s2",
+          "text": "I have taken courses in differential equations and numerical analysis.",
+          "subfield": "Applied Mathematics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "math_c_s3",
+          "text": "I have taken courses in probability theory and statistical inference.",
+          "subfield": "Statistics",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "transportation_college",
+      "category_name": "Transportation & Mobility",
+      "icon": "🚗",
+      "color": "#8B5CF6",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "trans_c_p1",
+          "text": "I have taken courses in logistics, supply chain, or transportation engineering.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_c_p3",
+          "text": "I understand freight forwarding, customs clearance, and Incoterms.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_c_p4",
+          "text":  "I understand color theory, lighting design, and material selection.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_c_p5",
+          "text": "I understand building codes, accessibility standards, and safety regulations.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "trans_c_s1",
+          "text": "I have taken courses in automotive engineering or electric vehicles.",
+          "subfield": "Automotive & Mobility Systems",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "trans_c_s2",
+          "text": "I have taken courses in aviation management or airport planning.",
+          "subfield": "Aviation Operations",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "trans_c_s3",
+          "text": "I have taken courses in maritime transportation or port management.",
+          "subfield": "Maritime & Shipping",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "energy_college",
+      "category_name": "Energy & Utilities",
+      "icon": "⚡",
+      "color": "#F59E0B",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "energy_c_p1",
+          "text": "I have taken courses in energy engineering, power systems, or utilities management.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_c_p2",
+          "text": "I understand electrical grid operations, transmission, and distribution.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "energy_c_s1",
+          "text": "I have taken courses in renewable energy like solar or wind.",
+          "subfield": "Renewable Energy",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "energy_c_s2",
+          "text": "I have taken courses in power system analysis or protection.",
+          "subfield": "Power Systems & Electricity",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "energy_c_s3",
+          "text": "I have taken courses in nuclear physics or reactor theory.",
+          "subfield": "Nuclear Energy",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "manufacturing_college",
+      "category_name": "Manufacturing & Industrial Production",
+      "icon": "🏭",
+      "color": "#6B7280",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "mfg_c_p1",
+          "text": "I have taken courses in manufacturing engineering or industrial engineering.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_c_p2",
+          "text": "I have taken courses in quality control or statistical process control.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_c_p3",
+          "text":  "I have taken courses in materials science or metallurgy.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_c_p4",
+          "text": "I have used CAD or CAM software like SolidWorks or Fusion 360.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_c_p4",
+          "text":  "I understand automation, robotics, and Industry 4.0 technologies.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "mfg_c_s1",
+          "text": "I have taken courses in CNC machining or additive manufacturing.",
+          "subfield": "Production & Manufacturing",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "mfg_c_s2",
+          "text": "I have taken courses in quality engineering and SPC.",
+          "subfield": "Quality Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "mfg_c_s3",
+          "text": "I have taken courses in materials characterization and failure analysis.",
+          "subfield": "Materials Science",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "retail_college",
+      "category_name": "Retail & E-commerce",
+      "icon": "🛒",
+      "color": "#EC4899",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "ret_c_p1",
+          "text": "I have taken courses in retail management, e-commerce, or digital marketing.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "ret_c_p2",
+          "text": "I have worked in retail stores in sales or customer service.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "ret_c_p3",
+          "text": "I understand cost management, budgeting, and variance analysis.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "ret_c_p4",
+          "text": "I am interested in corporate law, company secretarial practices, and governance.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "ret_c_s1",
+          "text": "I have taken courses in store operations or visual merchandising.",
+          "subfield": "Retail Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "ret_c_s2",
+          "text": "I have launched or managed an online store on Shopify.",
+          "subfield": "E-commerce",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "sports_college",
+      "category_name": "Sports & Fitness Industry",
+      "icon": "⚽",
+      "color": "#22C55E",
+      "total_questions": 25,
+      "parent_questions": [
+        {
+          "id": "sport_c_p1",
+          "text": "I have taken courses in sports management, exercise science, or fitness training.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sport_c_p2",
+          "text": "I have played competitive sports at school, club, or collegiate level.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "sport_c_s1",
+          "text": "I have taken courses in sports business or athletic administration.",
+          "subfield": "Sports Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "sport_c_s2",
+          "text": "I have taken courses in exercise physiology and kinesiology.",
+          "subfield": "Fitness & Personal Training",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "space_tech_college",
+      "category_name": "Space & Emerging Technologies",
+      "icon": "🚀",
+      "color": "#3B82F6",
+      "total_questions": 30,
+      "parent_questions": [
+        {
+          "id": "space_c_p1",
+          "text": "I have taken courses in aerospace engineering, astrophysics, or space science.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "space_c_p2",
+          "text": "I understand orbital mechanics, spacecraft design, or satellite systems.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "space_c_s1",
+          "text": "I have taken courses in astronomy, astrophysics, or cosmology.",
+          "subfield": "Space Science",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "space_c_s2",
+          "text": "I have taken courses in satellite engineering or subsystems.",
+          "subfield": "Satellite Technology",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "space_c_s3",
+          "text": "I have taken courses in space law or space policy.",
+          "subfield": "Space Policy & Law",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "accounting_college",
+      "category_name": "Accounting & Finance",
+      "icon": "💰",
+      "color": "#10B981",
+      "total_questions": 30,
+      "parent_questions": [
+        {
+          "id": "acc_c_p1",
+          "text": "I have taken courses in financial accounting, managerial accounting, or corporate finance.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "acc_c_p2",
+          "text": "I understand income statements, balance sheets, and cash flow statements.",
+          "type": "parent",
+          "weight": 1.0
+        },
+         {
+          "id": "acc_c_p3",
+          "text": "I have completed internships in accounting firms, banks, or corporate finance departments.",
+          "type": "parent",
+          "weight": 1.0
+        }, {
+          "id": "acc_c_p4",
+          "text": "I am proficient in accounting software like Tally, QuickBooks, or SAP FICO.",
+          "type": "parent",
+          "weight": 1.0
+        }, {
+          "id": "acc_c_p5",
+          "text": "I am interested in pursuing professional certifications like CA, CS, CMA, or CFA.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "acc_c_s1",
+          "text": "I have taken courses in individual, corporate, or partnership tax.",
+          "subfield": "Tax",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "acc_c_s2",
+          "text": "I have taken courses in auditing or assurance services.",
+          "subfield": "Audit",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "acc_c_s3",
+          "text": "I have taken courses in intermediate or advanced accounting.",
+          "subfield": "Accounts",
+          "type": "subfield",
+          "weight": 1.2
+        },
+         {
+          "id": "acc_c_s4",
+          "text": "I have taken courses in business mathematics, statistics, or econometrics.",
+          "subfield": "Accounts",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    }
+  ]
+}

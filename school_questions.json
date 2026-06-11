@@ -1,0 +1,1222 @@
+{
+  "version": "1.0",
+  "user_type": "school",
+  "total_categories": 16,
+  "total_questions": 100,
+  "response_options": {
+    "5": "Strongly Agree",
+    "4": "Agree",
+    "3": "Neutral",
+    "2": "Disagree",
+    "1": "Strongly Disagree"
+  },
+  "scoring": {
+    "min_score_per_category": 0,
+    "max_score_per_category": 60,
+    "match_thresholds": {
+      "high": 70,
+      "moderate": 50,
+      "low": 30
+    }
+  },
+  "categories": [
+    {
+      "category_id": "tech_engineering",
+      "category_name": "Technology & Engineering",
+      "icon": "💻",
+      "color": "#3B82F6",
+      "total_questions": 12,
+      "parent_questions": [
+        {
+          "id": "tech_p1",
+          "text": "When something electronic breaks, I like trying to figure out what went wrong before asking for help.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_p2",
+          "text": "I enjoy math class, especially when we solve puzzles or logic problems.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_p3",
+          "text": "I am curious about how video games are made and what makes them work.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_p4",
+          "text": "I like building things with LEGO, K'Nex, or other construction toys.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "tech_p5",
+          "text": "I find it interesting to learn how phones, computers, or the internet actually work.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "tech_s1",
+          "text": "I find it amazing that computers can learn to recognize faces or voices.",
+          "subfield": "Artificial Intelligence & Machine Learning",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "tech_s2",
+          "text": "I would like to teach a computer to do something automatically, like sort photos.",
+          "subfield": "Artificial Intelligence & Machine Learning",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "tech_s3",
+          "text": "I enjoy looking at charts and graphs to find patterns in information.",
+          "subfield": "Data Science & Analytics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "tech_s4",
+          "text": "I am curious about how companies recommend products I might like.",
+          "subfield": "Data Science & Analytics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "tech_s5",
+          "text": "I find it interesting to learn how to protect computers from viruses and hackers.",
+          "subfield": "Cybersecurity",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "health_sciences",
+      "category_name": "Health & Life Sciences",
+      "icon": "🏥",
+      "color": "#22C55E",
+      "total_questions": 7,
+      "parent_questions": [
+        {
+          "id": "health_p1",
+          "text": "I am curious about how the human body works and what happens when someone gets sick.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p2",
+          "text": "I enjoy biology class, especially learning about animals, plants, or the human body.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p3",
+          "text": "I like helping people who are hurt or unwell, even in small ways.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p4",
+          "text": "I care about keeping my body healthy through exercise and good food.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p5",
+          "text": "I would like to be a nurse, paramedic, or therapist who cares for patients.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p6",
+          "text": "I would like to work in a hospital or clinic someday.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p6",
+          "text": "I enjoy learning about how our brain works and how we think.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "health_p6",
+          "text": "I am interested in how medicines work to cure diseases.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "health_s1",
+          "text": "I would like to be a doctor and help sick people get better.",
+          "subfield": "Medical (Doctor)",
+          "type": "subfield",
+          "weight": 1.3
+        },
+        {
+          "id": "health_s2",
+          "text": "I would like to be a nurse, paramedic, or therapist who cares for patients.",
+          "subfield": "Healthcare (Non-Doctor)",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "health_s3",
+          "text": "I love animals and want to help them when they are sick or injured.",
+          "subfield": "Veterinary Sciences",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "business_finance",
+      "category_name": "Business, Finance & Management",
+      "icon": "💼",
+      "color": "#F59E0B",
+      "total_questions": 7,
+      "parent_questions": [
+        {
+          "id": "business_p1",
+          "text": "I enjoy organizing group projects and making sure everyone does their part.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "business_p2",
+          "text": "I have ideas for products or services that I think people would buy.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "business_p3",
+          "text": "I like earning and saving money and think about how to spend it wisely.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "business_p4",
+          "text": "I enjoy leading a team or being the captain of a group.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "business_p5",
+          "text": "I enjoy negotiating and convincing others to agree with my ideas.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "business_p6",
+          "text": "I like creating plans and schedules for group activities.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "business_p7",
+          "text": "I am interested in how companies advertise and sell their products.",
+          "type": "parent",
+          "weight": 1.0
+        }
+
+      ],
+      "subfield_questions": [
+        {
+          "id": "business_s1",
+          "text": "I would like to be the boss or manager of a company someday.",
+          "subfield": "Business & Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "business_s2",
+          "text": "I like the idea of starting my own business someday.",
+          "subfield": "Entrepreneurship & Startups",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "business_s3",
+          "text": "I am curious about how products get from factories to stores.",
+          "subfield": "Supply Chain & Logistics",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "creative_arts",
+      "category_name": "Creative Arts, Design & Media",
+      "icon": "🎨",
+      "color": "#6366F1",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "creative_p1",
+          "text": "I enjoy drawing, painting, or making things look beautiful.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "creative_p2",
+          "text": "I love telling stories through writing, video, or pictures.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "creative_p3",
+          "text": "I enjoy music, theater, or performing in front of others.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "creative_p4",
+          "text": "I enjoy singing, playing an instrument, or composing music.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "creative_p5",
+          "text": "I like writing poems, stories, or maintaining a journal.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "creative_s1",
+          "text": "I would like to be an artist, photographer, or graphic designer.",
+          "subfield": "Arts & Media",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "creative_s2",
+          "text": "I love playing video games and think about how they are made.",
+          "subfield": "Game Design & Development",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "creative_s3",
+          "text": "I enjoy making videos and editing them on my phone or computer.",
+          "subfield": "Film, TV & Digital Content",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "creative_s4",
+          "text": "I enjoy acting in plays or creating short films with friends.",
+          "subfield": "Film, TV & Digital Content",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "society_law",
+      "category_name": "Society, Law & Governance",
+      "icon": "⚖️",
+      "color": "#8B5CF6",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "society_p1",
+          "text": "I care about fairness and think everyone should be treated equally.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "society_p2",
+          "text": "I enjoy learning about history, especially how countries and governments work.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "society_p3",
+          "text": "I like debating or discussing important issues with others.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "society_p4",
+          "text": "I like reading news and staying updated about what's happening in the world.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "society_p5",
+          "text": "I believe in standing up for people who cannot speak for themselves.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "society_s1",
+          "text": "I would like to be a lawyer, judge, or politician someday.",
+          "subfield": "Law & Politics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "society_s2",
+          "text": "I am curious about how countries get along or disagree with each other.",
+          "subfield": "International Relations",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "society_s3",
+          "text": "I am interested in how detectives solve crimes using evidence.",
+          "subfield": "Criminal Justice & Forensics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "society_s4",
+          "text": "I am interested in how laws are made and why they are important.",
+          "subfield": "Criminal Justice & Forensics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "society_s5",
+          "text": "I enjoy participating in mock trials or debate competitions.",
+          "subfield": "Criminal Justice & Forensics",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "environment",
+      "category_name": "Environment, Agriculture & Earth Sciences",
+      "icon": "🌍",
+      "color": "#10B981",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "env_p1",
+          "text": "I care about protecting the environment and animals.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_p2",
+          "text": "I enjoy science class, especially learning about nature, weather, or the Earth.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_p3",
+          "text": "I like being outdoors, hiking, or exploring nature.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_p4",
+          "text": "I enjoy gardening, planting trees, or growing my own food.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "env_p5",
+          "text": "I am worried about climate change and want to help solve it.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "env_s1",
+          "text": "I would like to work protecting forests, oceans, or wildlife.",
+          "subfield": "Environmental Science",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "env_s2",
+          "text": "I love the ocean and am curious about sea creatures and coral reefs.",
+          "subfield": "Marine Science & Oceanography",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "env_s3",
+          "text": "I find rocks, fossils, and volcanoes fascinating.",
+          "subfield": "Geology & Earth Sciences",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "env_s4",
+          "text": "I enjoy recycling and finding ways to reduce waste.",
+          "subfield": "Geology & Earth Sciences",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "services",
+      "category_name": "Services, Hospitality & Public Safety",
+      "icon": "🛡️",
+      "color": "#EF4444",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "service_p1",
+          "text": "I enjoy helping people and making them feel welcome.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "service_p2",
+          "text": "I like planning parties, events, or gatherings.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "service_p3",
+          "text": "I am interested in keeping people safe and helping in emergencies.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "service_p4",
+          "text": "I would like to work in a hotel, restaurant, or travel company.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "service_p5",
+          "text": "I stay calm and think clearly during emergencies.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "service_s1",
+          "text": "I would like to be a police officer, firefighter, or soldier.",
+          "subfield": "Defence & Public Safety",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "service_s2",
+          "text": "I enjoy planning parties, school events, or celebrations.",
+          "subfield": "Event Management",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "service_s3",
+          "text": "I enjoy building, repairing, or working with tools.",
+          "subfield": "Skilled Trades",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "service_s4",
+          "text": "I would like to be an emergency medical responder or paramedic.",
+          "subfield": "Defence & Public Safety",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "service_s5",
+          "text": "I enjoy cooking or preparing food for others.",
+          "subfield": "Event Management",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "education",
+      "category_name": "Education & Training",
+      "icon": "📚",
+      "color": "#F97316",
+      "total_questions": 5,
+      "parent_questions": [
+        {
+          "id": "edu_p1",
+          "text": "I enjoy explaining things to others and helping them understand.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_p2",
+          "text": "I like being a tutor or helping younger students with their schoolwork.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_p3",
+          "text": "I enjoy creating lesson plans or teaching materials.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_p4",
+          "text": "I am patient when someone doesn't understand something the first time.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_p5",
+          "text": "I like finding new ways to explain difficult concepts.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_p6",
+          "text": "I enjoy mentoring or coaching younger kids in sports or academics.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "edu_p7",
+          "text": "I would like to work in educational technology or curriculum design.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "edu_s1",
+          "text": "I would like to be a teacher in a primary or secondary school.",
+          "subfield": "School Education",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "edu_s2",
+          "text": "I would like to be a university professor or lecturer someday.",
+          "subfield": "Higher Education & Academia",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "edu_s3",
+          "text": "I would like to help students with learning disabilities or special needs.",
+          "subfield": "Special Education",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "mathematics",
+      "category_name": "Mathematics & Statistics",
+      "icon": "📐",
+      "color": "#06B6D4",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "math_p1",
+          "text": "I enjoy math class and solving math problems.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_p2",
+          "text": "I like puzzles that require logical thinking.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_p3",
+          "text": "I enjoy finding patterns in numbers and data.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_p4",
+          "text": "I like estimating and making predictions based on information.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_p5",
+          "text": "I enjoy playing chess, Sudoku, or other logic-based games.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "math_p6",
+          "text": "I am curious about probability and chance.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "math_s1",
+          "text": "I enjoy solving challenging math problems just for fun.",
+          "subfield": "Pure Mathematics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "math_s2",
+          "text": "I like using math to solve real problems like traffic or money.",
+          "subfield": "Applied Mathematics",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "math_s3",
+          "text": "I enjoy collecting data and making charts or graphs.",
+          "subfield": "Statistics",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "math_s4",
+          "text": "I am curious about how secret codes and encryption work.",
+          "subfield": "Cryptography",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "transportation",
+      "category_name": "Transportation & Mobility",
+      "icon": "🚗",
+      "color": "#8B5CF6",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "trans_p1",
+          "text": "I am fascinated by how planes, trains, ships, and cars work.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_p2",
+          "text": "I enjoy maps and thinking about how people and goods move around.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_p3",
+          "text": "I am fascinated by trains and railway systems",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_p4",
+          "text": "I enjoy building model vehicles or working on bicycles.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_p5",
+          "text": "I am excited about flying cars, hyperloops, and future transportation.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_p6",
+          "text": "I like planning road trips and figuring out the best routes.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "trans_p7",
+          "text": "I am interested in how traffic systems and signals work.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "trans_s1",
+          "text": "I love cars and want to learn how they are designed and built.",
+          "subfield": "Automotive & Mobility Systems",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "trans_s2",
+          "text": "I would like to work at an airport or for an airline.",
+          "subfield": "Aviation Operations",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "trans_s3",
+          "text": "I am fascinated by cargo ships, ports, and ocean transport.",
+          "subfield": "Maritime & Shipping",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "trans_s4",
+          "text": "I am fascinated by trains and railway systems.",
+          "subfield": "Railway Operations",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "energy",
+      "category_name": "Energy & Utilities",
+      "icon": "⚡",
+      "color": "#F59E0B",
+      "total_questions": 5,
+      "parent_questions": [
+        {
+          "id": "energy_p1",
+          "text": "I am interested in where electricity comes from.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_p2",
+          "text": "I care about saving energy and using renewable sources like solar or wind.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_p3",
+          "text": "I like learning about different types of batteries and how they store energy.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_p4",
+          "text": "I am interested in how dams and hydroelectric power work.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_p5",
+          "text": "I try to turn off lights and electronics when not in use.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_p6",
+          "text": "I am curious about how electric cars are powered.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "energy_p7",
+          "text": "I think about ways to make my home more energy efficient.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "energy_s1",
+          "text": "I am excited about solar panels, wind turbines, and clean energy.",
+          "subfield": "Renewable Energy",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "energy_s2",
+          "text": "I am curious about how electricity reaches my home.",
+          "subfield": "Power Systems & Electricity",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "energy_s3",
+          "text": "I am fascinated by how nuclear power plants work.",
+          "subfield": "Nuclear Energy",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "manufacturing",
+      "category_name": "Manufacturing & Industrial Production",
+      "icon": "🏭",
+      "color": "#6B7280",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "mfg_p1",
+          "text": "I am curious about how things are made in factories.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_p2",
+          "text": "I enjoy building or assembling things.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_p3",
+          "text": "I like thinking of ways to make things faster, cheaper, or better.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_p4",
+          "text": "I like taking things apart to see how they work inside.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_p5",
+          "text": "I am interested in how robots help build cars, phones, and other products.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "mfg_p6",
+          "text": "I enjoy woodworking, metalworking, or crafting with my hands.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "mfg_s1",
+          "text": "I would like to manage a production line.",
+          "subfield": "Production & Manufacturing",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "mfg_s2",
+          "text": "I enjoy checking things to make sure they are perfect.",
+          "subfield": "Quality Management",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "mfg_s3",
+          "text": "I am curious about what different materials are made of.",
+          "subfield": "Materials Science",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "mfg_s4",
+          "text": "I would like to design and print things using a 3D printer.",
+          "subfield": "Additive Manufacturing",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "retail",
+      "category_name": "Retail & E-commerce",
+      "icon": "🛒",
+      "color": "#EC4899",
+      "total_questions": 5,
+      "parent_questions": [
+        {
+          "id": "retail_p1",
+          "text": "I enjoy shopping and thinking about why people buy certain products.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "retail_p2",
+          "text": "I am curious about how online stores like Amazon work.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "retail_p3",
+          "text": "I enjoy helping customers find what they are looking for.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "retail_p4",
+          "text": "I like designing product displays and store layouts.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "retail_p5",
+          "text": "I am interested in how companies use social media to sell products.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "retail_p6",
+          "text": "I enjoy negotiating prices and finding good deals.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "retail_p7",
+          "text": "I am curious about how customer reviews affect product sales.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "retail_s1",
+          "text": "I would like to run an online business.",
+          "subfield": "E-commerce Business",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "retail_s2",
+          "text": "I would like to manage a store or a retail chain.",
+          "subfield": "Retail Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "retail_s3",
+          "text": "I am curious about how products get shipped to customers' doors.",
+          "subfield": "Dropshipping & Fulfillment",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "sports",
+      "category_name": "Sports & Fitness Industry",
+      "icon": "⚽",
+      "color": "#22C55E",
+      "total_questions": 5,
+      "parent_questions": [
+        {
+          "id": "sports_p1",
+          "text": "I love playing or watching sports.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sports_p2",
+          "text": "I like coaching or teaching others how to play sports.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sports_p3",
+          "text": "I am interested in sports medicine and injury prevention.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sports_p4",
+          "text": "I enjoy watching sports documentaries and learning about athletes.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sports_p5",
+          "text": "I like setting fitness goals and tracking my progress.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sports_p6",
+          "text": "I would like to work in a gym, sports facility, or fitness center.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "sports_p7",
+          "text": "I enjoy being active, exercising, or working out.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "sports_s1",
+          "text": "I would like to manage a sports team or organization.",
+          "subfield": "Sports Management",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "sports_s2",
+          "text": "I would like to be a personal trainer or fitness coach.",
+          "subfield": "Fitness & Personal Training",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "sports_s3",
+          "text": "I enjoy tracking sports statistics and player performance.",
+          "subfield": "Sports Analytics",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    },
+    {
+      "category_id": "space_tech",
+      "category_name": "Space & Emerging Technologies",
+      "icon": "🚀",
+      "color": "#3B82F6",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "space_p1",
+          "text": "I am fascinated by space, stars, planets, and galaxies.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "space_p2",
+          "text": "I am curious about new technologies like AI, VR, or quantum computers.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "space_p3",
+          "text": "I enjoy watching sci-fi movies about space and future technology.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "space_p4",
+          "text": "I am curious about black holes, aliens, and other galaxies.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "space_p5",
+          "text": "I would like to work for NASA, ISRO, or SpaceX someday.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "space_p6",
+          "text": "I enjoy learning about the latest tech inventions and gadgets.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "space_s1",
+          "text": "I would like to be an astronomer or astrophysicist.",
+          "subfield": "Space Science (Astronomy, Astrophysics)",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "space_s2",
+          "text": "I am curious about how satellites help with GPS, weather, and internet.",
+          "subfield": "Satellite Technology",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "space_s3",
+          "text": "I am interested in the rules that govern space exploration.",
+          "subfield": "Space Policy & Law",
+          "type": "subfield",
+          "weight": 1.0
+        },
+        {
+          "id": "space_s4",
+          "text": "I would like to travel to space as a tourist someday.",
+          "subfield": "Space Tourism",
+          "type": "subfield",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "category_id": "accounting",
+      "category_name": "Accounting & Finance",
+      "icon": "💰",
+      "color": "#10B981",
+      "total_questions": 6,
+      "parent_questions": [
+        {
+          "id": "acc_p1",
+          "text": "I enjoy math and working with numbers.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "acc_p2",
+          "text": "I am good at keeping track of money and budgets.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "acc_p3",
+          "text": "I like saving money and planning for future purchases.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "acc_p4",
+          "text": "I enjoy balancing my allowance or tracking my expenses.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "acc_p5",
+          "text": "I am curious about how banks and credit cards work.",
+          "type": "parent",
+          "weight": 1.0
+        },
+        {
+          "id": "acc_p6",
+          "text": "I like finding ways to save money and spend wisely.",
+          "type": "parent",
+          "weight": 1.0
+        }
+      ],
+      "subfield_questions": [
+        {
+          "id": "acc_s1",
+          "text": "I would like to manage the financial records of a business.",
+          "subfield": "Accounts",
+          "type": "subfield",
+          "weight": 1.2
+        },
+        {
+          "id": "acc_s2",
+          "text": "I am curious about how taxes are calculated.",
+          "subfield": "Tax",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "acc_s3",
+          "text": "I enjoy checking financial records for errors.",
+          "subfield": "Audit",
+          "type": "subfield",
+          "weight": 1.1
+        },
+        {
+          "id": "acc_s4",
+          "text": "I am interested in investing in companies that help the environment.",
+          "subfield": "ESG Investing & Reporting",
+          "type": "subfield",
+          "weight": 1.1
+        }
+      ]
+    }
+  ]
+}
